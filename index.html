@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div
+      class="w-full h-[330px] md:h-[280px] bg-cover md:bg-home-desktop bg-home-mobile relative"
+    >
+      <div class="flex flex-col h-full items-center relative">
+        <div class="font-rubik font-medium text-white text-3xl my-8">
+          IP Address Tracker
+        </div>
+        <form id="form" class="flex w-11/12 max-w-lg">
+          <input
+            id="ip"
+            class="p-4 rounded-l-xl text-[18px] outline-none w-full"
+            placeholder="Search for any IP address or domain"
+          />
+          <button type="submit" class="bg-black hover:bg-black/50 text-white py-4 px-6 rounded-r-xl">
+            <img src="./images/icon-arrow.svg" alt="" />
+          </button>
+        </form>
+          <div class="absolute -bottom-[50%] md:-bottom-16 p-8 shadow-lg bg-white w-11/12 md:w-3/4 md:h-32 rounded-xl flex flex-col md:flex-row gap-2 text-center items-center justify-between">
+            <div>
+              <div class="font-rubik font-bold text-sm tracking-widest text-black/50 uppercase">ip address</div>
+              <div class="font-rubik font-medium text-2xl" id="ipAddress"></div>
+            </div>
+            <div class="border-l border-gray-300 h-16 mx-2 hidden md:block"></div>
+            <div>
+              <div class="font-rubik font-bold text-sm tracking-widest text-black/50 uppercase">Location</div>
+              <div class="font-rubik font-medium text-2xl" id="location"></div>
+            </div>
+            <div class="border-l border-gray-300 h-16 mx-2 hidden md:block"></div>
+            <div>
+              <div class="font-rubik font-bold text-sm tracking-widest text-black/50 uppercase">timezone</div>
+              <div class="font-rubik font-medium text-2xl" id="timezone"></div>
+            </div>
+            <div class="border-l border-gray-300 h-16 mx-2 hidden md:block"></div>
+            <div>
+              <div class="font-rubik font-bold text-sm tracking-widest text-black/50 uppercase">isp</div>
+              <div class="font-rubik font-medium text-2xl" id="isp"></div>
+            </div>
+          </div>
+    </div>
+    <div class="h-[500px] -z-10" id="map"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
