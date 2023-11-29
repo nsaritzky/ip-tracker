@@ -11,8 +11,8 @@ module.exports = {
         rubik: ["Rubik"],
       },
       backgroundImage: {
-        "home-desktop": "url('/images/pattern-bg-desktop.png')",
-        "home-mobile": "url('/images/pattern-bg-mobile.png')",
+        "home-desktop": "url('./images/pattern-bg-desktop.png')",
+        "home-mobile": "url('./images/pattern-bg-mobile.png')",
       },
     },
   },
