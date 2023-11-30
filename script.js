@@ -13,7 +13,7 @@ fetch(url)
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
     const icon = L.icon({
-      iconUrl: "/images/icon-location.svg",
+      iconUrl: "/ip-tracker/images/icon-location.svg",
     });
 
     const marker = L.marker([data.location.lat, data.location.lng], {
